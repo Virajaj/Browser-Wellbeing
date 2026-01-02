@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Wellbeing",
+  "version": "0.1",
+  "description": "Tracks time spent on websites.",
+  "permissions": ["tabs", "storage", "windows"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+B"
+      },
+      "description": "Open Browser Wellbeing"
+    }
+  }
+}
